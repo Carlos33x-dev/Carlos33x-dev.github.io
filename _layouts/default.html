@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+</head>
+<body>
+    <main>
+        {{ content }}
+    </main>
+    
+    <footer>
+        <div class="footer-navigation">
+            <a href="{{ '/femme-du-jour.html' | relative_url }}">
+                <img src="/assets/images/female.png" alt="Femme du jour" width="234" />
+            </a>
+            <a href="{{ '/femme-de-demain.html' | relative_url }}">Femme de demain</a>
+            <a href="{{ '/calendrier.html' | relative_url }}">Calendrier</a>
+            <a href="{{ '/recherche.html' | relative_url }}">Recherche</a>
+        </div>
+    </footer>
+</body>
+</html>
